@@ -25,7 +25,9 @@ This pipeline inverts that. It actively **rejects** the strong ones and keeps th
 | `reviews_count < 50` | Small operations = real opportunity |
 | `business_name exists` | Unusable without it |
 
-A 10-place test scrape of dental clinics in Karachi yielded **2 high-quality leads** — both with phone numbers, 3.x ratings, and zero web presence.
+A multi-city Pakistan scrape (8 cities × 3 niches, 20 places per search) yielded **dozens of high-quality leads** across Karachi, Multan, Quetta, Faisalabad, Peshawar, and Dera Ismail Khan — small clinics, gyms, beauty salons, and hair salons, all with phone numbers, ratings ≤ 4, fewer than 50 reviews, and zero web presence.
+
+![Leads in Google Sheets](docs/screenshot-sheet.png)
 
 ---
 
