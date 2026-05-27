@@ -1,6 +1,6 @@
 # LeadsGenerator
 
-[![Filter tests](https://img.shields.io/badge/tests-6%2F6%20passing-brightgreen)](./tests)
+[![Tests](https://github.com/Mohid59/LeadsGenerator/actions/workflows/test.yml/badge.svg)](https://github.com/Mohid59/LeadsGenerator/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![n8n](https://img.shields.io/badge/n8n-self--hosted-EA4B71)](https://n8n.io)
 [![Apify](https://img.shields.io/badge/Apify-Google%20Maps%20Scraper-orange)](https://apify.com)
