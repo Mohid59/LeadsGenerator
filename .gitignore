@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Secrets — never commit
+.env
+n8n/.env
+**/.env.local
+*.pem
+*.key
+*.credentials.json
+
+# Local outputs
+leads.json
+output.json

@@ -1,0 +1,44 @@
+{
+  "_comment": "GLOBAL ENGLISH-SPEAKING — UK / US / Canada / Australia / NZ / Ireland. Higher-value markets, English outreach. Mixed countries → no countryCode/proxy country.",
+
+  "searchStringsArray": [
+    "dental clinics in London",
+    "dental clinics in Manchester",
+    "dental clinics in Birmingham",
+    "dental clinics in Dublin",
+    "dental clinics in Toronto",
+    "dental clinics in Vancouver",
+    "dental clinics in Sydney",
+    "dental clinics in Melbourne",
+    "dental clinics in Auckland",
+
+    "beauty salons in London",
+    "beauty salons in Toronto",
+    "beauty salons in Sydney",
+    "beauty salons in Auckland",
+
+    "gyms in London",
+    "gyms in Toronto",
+    "gyms in Sydney"
+  ],
+
+  "locationQuery": "",
+  "maxCrawledPlacesPerSearch": 40,
+
+  "language": "en",
+  "includeWebResults": false,
+  "scrapePlaceDetailPage": true,
+  "scrapeReviewsPersonalData": false,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "skipClosedPlaces": true,
+
+  "maxConcurrency": 6,
+  "maxRequestRetries": 3,
+  "requestTimeoutSecs": 60,
+
+  "proxyConfig": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["RESIDENTIAL"]
+  }
+}

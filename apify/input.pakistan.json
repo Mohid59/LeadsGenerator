@@ -1,0 +1,55 @@
+{
+  "_comment": "PAKISTAN — top 8 cities × 3 niches = 24 searches. With maxCrawledPlacesPerSearch=50 that's up to 1,200 places per run. Adjust per-search count down if you're on Apify free tier ($5 credit/month ≈ 700 places).",
+
+  "searchStringsArray": [
+    "dental clinics in Karachi",
+    "dental clinics in Lahore",
+    "dental clinics in Islamabad",
+    "dental clinics in Rawalpindi",
+    "dental clinics in Faisalabad",
+    "dental clinics in Multan",
+    "dental clinics in Peshawar",
+    "dental clinics in Quetta",
+
+    "beauty salons in Karachi",
+    "beauty salons in Lahore",
+    "beauty salons in Islamabad",
+    "beauty salons in Rawalpindi",
+    "beauty salons in Faisalabad",
+    "beauty salons in Multan",
+    "beauty salons in Peshawar",
+    "beauty salons in Quetta",
+
+    "gyms in Karachi",
+    "gyms in Lahore",
+    "gyms in Islamabad",
+    "gyms in Rawalpindi",
+    "gyms in Faisalabad",
+    "gyms in Multan",
+    "gyms in Peshawar",
+    "gyms in Quetta"
+  ],
+
+  "locationQuery": "",
+  "maxCrawledPlacesPerSearch": 20,
+
+  "language": "en",
+  "countryCode": "pk",
+
+  "includeWebResults": false,
+  "scrapePlaceDetailPage": true,
+  "scrapeReviewsPersonalData": false,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "skipClosedPlaces": true,
+
+  "maxConcurrency": 6,
+  "maxRequestRetries": 3,
+  "requestTimeoutSecs": 60,
+
+  "proxyConfig": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["RESIDENTIAL"],
+    "apifyProxyCountry": "PK"
+  }
+}

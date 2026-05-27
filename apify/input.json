@@ -1,0 +1,40 @@
+{
+  "_comment_actor": "Use Apify Actor: compass/crawler-google-places (the maintained Google Maps Scraper).",
+  "_comment_usage": "Paste this JSON into the Actor's 'Input' tab in Apify Console. Adjust searchStringsArray for your niche/city.",
+
+  "searchStringsArray": [
+    "dental clinics in Karachi",
+    "beauty salons in Karachi",
+    "gyms in Karachi"
+  ],
+
+  "locationQuery": "Karachi, Pakistan",
+  "maxCrawledPlacesPerSearch": 120,
+
+  "language": "en",
+  "countryCode": "pk",
+
+  "includeWebResults": false,
+  "scrapePlaceDetailPage": true,
+  "scrapeReviewsPersonalData": false,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "skipClosedPlaces": true,
+
+  "_comment_rate_limit": "Apify auto-handles Google rate limits; do NOT set concurrency above 8 on the free plan.",
+  "maxConcurrency": 6,
+
+  "_comment_retry": "Retries handle 'incomplete data' / timeouts from Google's UI.",
+  "maxRequestRetries": 3,
+  "requestTimeoutSecs": 60,
+
+  "_comment_proxy": "Residential proxy reduces 'temporarily blocked' results. Free tier = use datacenter group.",
+  "proxyConfig": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["RESIDENTIAL"],
+    "apifyProxyCountry": "PK"
+  },
+
+  "_comment_webhook": "After Actor finishes, send results to n8n. Replace the URL with your n8n webhook URL.",
+  "_comment_webhook_setup": "In Apify Console → Actor → Integrations → Webhooks → Add → Event 'ACTOR.RUN.SUCCEEDED' → URL = https://<your-n8n>/webhook/leads-ingest"
+}

@@ -1,0 +1,49 @@
+{
+  "_comment": "GULF / MENA — UAE, KSA, Qatar, Bahrain, Kuwait, Oman. Mixed countries → no countryCode, no proxy country. RESIDENTIAL proxy auto-picks closest exit.",
+
+  "searchStringsArray": [
+    "dental clinics in Dubai",
+    "dental clinics in Abu Dhabi",
+    "dental clinics in Sharjah",
+    "dental clinics in Riyadh",
+    "dental clinics in Jeddah",
+    "dental clinics in Dammam",
+    "dental clinics in Doha",
+    "dental clinics in Manama",
+    "dental clinics in Kuwait City",
+    "dental clinics in Muscat",
+
+    "beauty salons in Dubai",
+    "beauty salons in Abu Dhabi",
+    "beauty salons in Riyadh",
+    "beauty salons in Jeddah",
+    "beauty salons in Doha",
+    "beauty salons in Kuwait City",
+
+    "gyms in Dubai",
+    "gyms in Abu Dhabi",
+    "gyms in Riyadh",
+    "gyms in Doha",
+    "gyms in Kuwait City"
+  ],
+
+  "locationQuery": "",
+  "maxCrawledPlacesPerSearch": 40,
+
+  "language": "en",
+  "includeWebResults": false,
+  "scrapePlaceDetailPage": true,
+  "scrapeReviewsPersonalData": false,
+  "maxReviews": 0,
+  "maxImages": 0,
+  "skipClosedPlaces": true,
+
+  "maxConcurrency": 6,
+  "maxRequestRetries": 3,
+  "requestTimeoutSecs": 60,
+
+  "proxyConfig": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["RESIDENTIAL"]
+  }
+}

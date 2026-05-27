@@ -1,0 +1,14 @@
+{
+  "name": "leadsgenerator",
+  "version": "1.0.0",
+  "description": "Automated Google Maps → no-website leads → Google Sheets pipeline (Apify + n8n)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test-runner.js",
+    "filter": "node filter/filter-standalone.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

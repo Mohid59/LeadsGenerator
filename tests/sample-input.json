@@ -1,0 +1,80 @@
+[
+  {
+    "_case": "CASE 1 — no website, should PASS",
+    "business_name": "Smile Dental Clinic",
+    "phone": "+923001234567",
+    "address": "Plot 12, Block 4, Clifton",
+    "city": "Karachi",
+    "website": null,
+    "rating": 3.8,
+    "reviews_count": 12,
+    "category": "Dental clinic",
+    "place_id": "ChIJ_test_001",
+    "source": "google_maps_apify"
+  },
+  {
+    "_case": "CASE 2 — has website, should FAIL",
+    "business_name": "Elite Beauty Salon",
+    "phone": "+923009876543",
+    "address": "Khayaban-e-Shahbaz, DHA",
+    "city": "Karachi",
+    "website": "https://elitebeautysalon.pk",
+    "rating": 4.5,
+    "reviews_count": 230,
+    "category": "Beauty salon",
+    "place_id": "ChIJ_test_002",
+    "source": "google_maps_apify"
+  },
+  {
+    "_case": "CASE 3 — missing phone, should FAIL",
+    "business_name": "Iron Gym",
+    "phone": null,
+    "address": "Tariq Road",
+    "city": "Karachi",
+    "website": null,
+    "rating": 3.2,
+    "reviews_count": 5,
+    "category": "Gym",
+    "place_id": "ChIJ_test_003",
+    "source": "google_maps_apify"
+  },
+  {
+    "_case": "CASE 4 — null-heavy record, should NOT crash; passes if name+phone present",
+    "business_name": "Aisha Skincare",
+    "phone": "03331122334",
+    "address": null,
+    "city": null,
+    "website": null,
+    "rating": null,
+    "reviews_count": null,
+    "category": null,
+    "place_id": "ChIJ_test_004",
+    "source": "google_maps_apify"
+  },
+  {
+    "_case": "CASE 5 — high rating + many reviews, should FAIL",
+    "business_name": "Top Rated Clinic",
+    "phone": "+923215555555",
+    "address": "Shahrah-e-Faisal",
+    "city": "Karachi",
+    "website": null,
+    "rating": 4.8,
+    "reviews_count": 412,
+    "category": "Medical clinic",
+    "place_id": "ChIJ_test_005",
+    "source": "google_maps_apify"
+  },
+  {
+    "_case": "CASE 6 — missing business_name, should FAIL",
+    "business_name": "",
+    "phone": "+923009998877",
+    "address": "Gulshan",
+    "city": "Karachi",
+    "website": null,
+    "rating": 2.1,
+    "reviews_count": 3,
+    "category": "Unknown",
+    "place_id": "ChIJ_test_006",
+    "source": "google_maps_apify"
+  }
+]

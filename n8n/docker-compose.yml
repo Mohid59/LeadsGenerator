@@ -1,0 +1,49 @@
+# Self-hosted n8n. Free alternative now that the cloud trial ended.
+# Start n8n only:        docker compose up -d n8n
+# Start n8n + ngrok:     docker compose --profile tunnel up -d
+# Stop:                  docker compose down
+# UI:                    http://localhost:5678
+#
+# Credentials live in .env (gitignored). Generated at setup time.
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n_leads
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    env_file:
+      - .env
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=Asia/Karachi
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - N8N_PAYLOAD_SIZE_MAX=64
+      - N8N_DEFAULT_BINARY_DATA_MODE=filesystem
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+  # Optional: only starts under the 'tunnel' profile.
+  # Get a free token at ngrok.com → put it in .env → run:
+  #   docker compose --profile tunnel up -d
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: n8n_ngrok
+    restart: unless-stopped
+    profiles: ["tunnel"]
+    command: http n8n:5678
+    env_file:
+      - .env
+    ports:
+      - "4040:4040"
+    depends_on:
+      - n8n
+
+volumes:
+  n8n_data:
